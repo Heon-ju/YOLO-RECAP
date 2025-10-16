@@ -22,8 +22,8 @@ pip install -r requirements.txt
 🚀 python(train_CR.py)
 ```
 python train_CR.py --model "ultralytics/cfg/models/11/yolo11n-CR.yaml" --dataset_config "ultralytics-main/ultralytics/cfg/datasets/VisDrone.yaml" --epochs 100 --imgsz 640 --device 0 --output_dir "E:/YOLOv11_train" --run_name "YOLO11CR_VisDrone"
-```
-   
+```   
+
 🚀 Notebook(.ipynb)
 ```
 from ultralytics import YOLO
