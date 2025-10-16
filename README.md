@@ -11,6 +11,8 @@ YOLO-RECAP is a novel object detection framework built upon YOLOv11, integrating
 ```bash
 pip install -r requirements.txt
 
+---
+
 ## 3. Model Architecture
 YOLO-RECAP integrates CARAFE into the upsampling path and ECA into the neck/head for improved feature reassembly and channel weighting.
 
