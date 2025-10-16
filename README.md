@@ -18,4 +18,7 @@ This architecture enhances small-object detection capability while preserving re
 pip install -r requirements.txt
 ```
 
-## 3.
+## 3. Model Training Example
+🚀 Python(python start_train.py --model "ultralytics/cfg/models\11/yolo11n-CR.yaml" --dataset_config "ultralytics-main/ultralytics/cfg/datasets/VisDrone.yaml" --epochs 100 --imgsz 640 --device 0 --batch 32 --workers 8 --output_dir "E:/YOLOv11_train" --run_name "YOLO11CR_VisDrone")
+
+🌸 🍀 🌷 🧸 🪄 🦾 💪 🛠️
