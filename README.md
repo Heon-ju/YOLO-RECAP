@@ -25,6 +25,8 @@ python train_CR.py --model "ultralytics/cfg/models/11/yolo11n-CR.yaml" --dataset
 ```
 
 
+
+
 🚀 Notebook(.ipynb)
 ```
 from ultralytics import YOLO
