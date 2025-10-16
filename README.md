@@ -17,6 +17,5 @@ This architecture enhances small-object detection capability while preserving re
 ```bash
 pip install -r requirements.txt
 
----
 
 ## 3.
