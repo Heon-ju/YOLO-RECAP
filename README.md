@@ -44,4 +44,22 @@ if __name__ == "__main__":
     freeze_support()  
     main()
 ```
+
+## 4. Model Validation Example
+🚀 Notebook(.ipynb)
+```
+from ultralytics import YOLO
+
+# Load YOLOv10n model from scratch
+model = YOLO("E:/YOLOv11_train/YOLO11CR_VisDron/weights/best.pt")
+
+
+metrics = model.val()  
+metrics.box.map    # map50-95
+metrics.box.map50  # map50
+metrics.box.map75  # map75
+metrics.box.maps   
+```
+
+
 🌸 🍀 🌷 🧸 🪄 🦾 💪 🛠️
