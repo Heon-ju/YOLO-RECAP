@@ -28,8 +28,8 @@ python train_CR.py --model "ultralytics/cfg/models/11/yolo11n-CR.yaml" --dataset
 from ultralytics import YOLO
 from multiprocessing import freeze_support
 
-model_path   = "ultralytics/cfg/models/11/yolo11n-CR.yaml"
-data_path    = "ultralytics-main/ultralytics/cfg/datasets/VisDrone.yaml"
+model_path   = "C:/User/Desktop/YOLO-RECAP/ultralytics/cfg/models/11/yolo11n-CR.yaml"
+data_path    = "C:/User/Desktop/YOLO-RECAP/ultralytics/cfg/datasets/VisDrone.yaml"
 epochs       = 100
 imgsz        = 640
 device       = 0
