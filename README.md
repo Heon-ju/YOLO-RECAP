@@ -19,9 +19,29 @@ pip install -r requirements.txt
 ```
 
 ## 3. Model Training Example
-🚀 Python(train_CR.py)
+🚀 python(train_CR.py)
 ```
-python train_CR.py --model "ultralytics/cfg/models\11/yolo11n-CR.yaml" --dataset_config "ultralytics-main/ultralytics/cfg/datasets/VisDrone.yaml" --epochs 100 --imgsz 640 --device 0 --batch 32 --workers 8 --output_dir "E:/YOLOv11_train" --run_name "YOLO11CR_VisDrone"
+python train_CR.py --model "ultralytics/cfg/models/11/yolo11n-CR.yaml" --dataset_config "ultralytics-main/ultralytics/cfg/datasets/VisDrone.yaml" --epochs 100 --imgsz 640 --device 0 --output_dir "E:/YOLOv11_train" --run_name "YOLO11CR_VisDrone"
 ```
+🚀 Notebook(.ipynb)
+```
+from ultralytics import YOLO
+from multiprocessing import freeze_support
 
+model_path   = "ultralytics/cfg/models/11/yolo11n-CR.yaml"
+data_path    = "ultralytics-main/ultralytics/cfg/datasets/VisDrone.yaml"
+epochs       = 100
+imgsz        = 640
+device       = 0
+project_path = "E:/YOLOv11_train"
+run_name     = "YOLO11CR_VisDrone"
+
+def main():
+    model = YOLO(model_path)
+    model.train(data=data_path, epochs=epochs, imgsz=imgsz, device=device, project=project_path, name=run_name)
+
+if __name__ == "__main__":
+    freeze_support()  
+    main()
+```
 🌸 🍀 🌷 🧸 🪄 🦾 💪 🛠️
